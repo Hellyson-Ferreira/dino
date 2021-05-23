@@ -1,0 +1,78 @@
+:root {
+    --redColor: #F64545;
+    --bgColor: #1E1E1E;
+    --divColor: #171717;
+    --bgContentColor: #C4C4C4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Sniglet', cursive;
+}
+
+body {
+    background: var(--divColor);
+    height: 79vh;
+}
+
+header {
+    padding: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+
+    background-color: var(--divColor);
+    border-bottom: 1px solid var(--redColor);
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--redColor);
+}
+
+main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+#game {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+
+    border-radius: 0.25rem;
+    background: var(--bgColor)
+}
+
+#player {
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    left: 70px;
+    top: 70%;
+
+    animation-name: dino;
+    animation-duration: 0.7s;
+}
+
+@keyframes dino {
+    0% {top: 70%;}
+    15% {top: 65%;}
+    25% {top: 55%;}
+    50% {top: 45%;}
+    75% {top: 55%;}
+    85% {top: 65%;}
+    100% {top: 70%}
+}
+
+#player > img {
+    height:100%;
+}
