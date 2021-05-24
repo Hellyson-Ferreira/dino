@@ -43,34 +43,34 @@ main {
 }
 
 #game {
-    position: relative;
     width: 1000px;
     height: 400px;
 
     border-radius: 0.25rem;
-    background: var(--bgColor)
+    background: var(--bgColor);
+    margin:auto;
 }
 
 #player {
     width: 80px;
     height: 80px;
 
-    position: absolute;
-    left: 70px;
+    position: relative;
+    left: 50px;
     top: 70%;
 
     
     
 }
 #player.jump{
-    animation: dino  0.4s linear;
+    animation: dino  0.8s linear;
 }
 
 @keyframes dino {
     0% {top: 70%;}
     15% {top: 65%;}
     25% {top: 55%;}
-    50% {top: 45%;}
+    50% {top: 25%;}
     75% {top: 55%;}
     85% {top: 65%;}
     100% {top: 70%}
@@ -81,19 +81,20 @@ main {
 }
 
 #cactus{
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 70px;
     position: relative; 
-    top: 70%;
-    left: 960px; 
+    top: 50%;
+    left: 940px; 
+    background-color: #F64545;
     background-size: 20px 40px; 
-    animation: block is infinite;
+    animation: block 2s infinite;
 }
-#cactus > img {
+/* #cactus > img {
     height:100%;
-}
+} */
 
 @keyframes block { 
-    0% { left: 960px; } 
-    100% { left: Opx; }
+    0% { left: 940px; } 
+    100% { left: 0px; }
 }
