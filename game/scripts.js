@@ -1,9 +1,7 @@
 const player = document.querySelector('#player')
 
-player.style.x += 1
-
-
 document.body.addEventListener("keydown", (e) => {
-    player.style.top = player.style.top == '70%'? '45%':'70%'
-   
-  });
+  if (e.keyCode == 32 || e.keyCode == 38){
+    player.classList.toggle('jump')
+    setTimeout(() => player.classList.toggle('jump'),400)
+  }})

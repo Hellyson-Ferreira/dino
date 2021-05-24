@@ -59,8 +59,11 @@ main {
     left: 70px;
     top: 70%;
 
-    animation-name: dino;
-    animation-duration: 0.7s;
+    
+    
+}
+#player.jump{
+    animation: dino  0.4s linear;
 }
 
 @keyframes dino {
