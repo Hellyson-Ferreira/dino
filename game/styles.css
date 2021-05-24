@@ -79,3 +79,21 @@ main {
 #player > img {
     height:100%;
 }
+
+#cactus{
+    width: 80px;
+    height: 80px;
+    position: relative; 
+    top: 70%;
+    left: 960px; 
+    background-size: 20px 40px; 
+    animation: block is infinite;
+}
+#cactus > img {
+    height:100%;
+}
+
+@keyframes block { 
+    0% { left: 960px; } 
+    100% { left: Opx; }
+}
